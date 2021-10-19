@@ -180,7 +180,7 @@ SELECT * FROM rwy_stock WHERE uraian LIKE '%210610036%';
 
 /*--------------- KONTROL UGD ---------------------------*/
 SELECT MAX(no_kwit) FROM kunj;
-SELECT * FROM kunj WHERE no_kwit = 211001213;
+SELECT * FROM kunj WHERE no_kwit = 211019165;
 
 /*--------------- REFERENSI ALKES --------------------*/
 /* Alkes000137 - Nasal Canula Dewasa 10560 */
@@ -315,9 +315,9 @@ SELECT * FROM inap_alkes WHERE tgl = '2021-06-24 17:00:00' AND id_rwt = 43022; /
 /* D01 - Nerina Mayakartifa. dr,Sp.PD, M.Sc, FINASIM */
 
 SELECT * FROM inap_vis WHERE visit LIKE '%konsul on%';
-SELECT * FROM inap_vis WHERE id_rwt = 45407;
+SELECT * FROM inap_vis WHERE id_rwt = 45410;
 SELECT * FROM inap_pasien WHERE kwit = ''; /*Ambil nomtri*/
-SELECT * FROM omset_visit_ranap WHERE nomtri = '211005-466';
+SELECT * FROM omset_visit_ranap WHERE nomtri = '211018-524';
 
 /*RI122 - Oksigen 2-5 Liter / Menit > 12 Jam ( 1 Hari )*/
 SELECT * FROM inap_jasa WHERE jasa1 LIKE '%oksigen%';
