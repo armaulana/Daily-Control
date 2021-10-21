@@ -56,9 +56,9 @@ SELECT * FROM kunj WHERE id = '';
 SELECT * FROM antrian WHERE notes = 'bayar' AND poli LIKE '%online%'; /*Search List Pasien Poli*/
 SELECT * FROM antrian WHERE notes = 'bayar' AND poli LIKE '%ugd%'; /*Search List Pasien Ugd*/
 SELECT * FROM antrian WHERE pasien LIKE '%00133124%'; /* Nomor Rekamedik */
-SELECT * FROM antrian WHERE nomtri = '211018-212'; /*Nomtri*/
+SELECT * FROM antrian WHERE nomtri = '211019-414'; /*Nomtri*/
 SELECT * FROM periksa WHERE pasien LIKE '%00027206%';
-SELECT * FROM periksa WHERE nomtri = '211015-328';  ----- MEDICAL CHECKUP --- 
+SELECT * FROM periksa WHERE nomtri = '211019-456';  ----- MEDICAL CHECKUP --- 
 SELECT * FROM periksa WHERE pasien LIKE '%00131203%';
 SELECT * FROM periksa2 WHERE nomtri = '210825-166';
 SELECT * FROM periksa3 WHERE nomtri = '210901-110';
@@ -105,7 +105,7 @@ SELECT * FROM antrian WHERE pasien LIKE '%00034586%';
 SELECT * FROM lab WHERE nomtri = '211005-164'; /*Cari Pasien*/
 SELECT * FROM lab WHERE kwit = '211005003'; /*Cari Pasien*/
 SELECT * FROM lab_2 WHERE kwit = '211005003'; /*Inputan Pemeriksaan Lab dan Rad , input langsung dari pendaftaran*/
-SELECT * FROM detil_lab WHERE nomtri = '211005-164'; /*Hasil Inputan UGD & Langsung Ke Laboratorium */ 
+SELECT * FROM detil_lab WHERE nomtri = '211021-063'; /*Hasil Inputan UGD & Langsung Ke Laboratorium */ 
 
 SELECT * FROM kunj_lab WHERE kwit = 211016005; /*Data transaksi laboratorium */
 
@@ -241,7 +241,7 @@ SELECT * FROM ugd_tind WHERE tind1 LIKE '%oks%';
 SELECT * FROM ugd_tind WHERE nomtri = '211018-078'; 210930-269
 SELECT * FROM omset_igd_tind WHERE nomtri = '210929-138';
 
-SELECT * FROM ugd_lab WHERE nomtri = '211018-078';
+SELECT * FROM ugd_lab WHERE nomtri = '211021-063';
 SELECT * FROM lab WHERE nomtri = '210702-026';
 SELECT * FROM omset_radiologi_igd WHERE nomtri = '210716-180';
 
@@ -315,15 +315,15 @@ SELECT * FROM inap_alkes WHERE tgl = '2021-06-24 17:00:00' AND id_rwt = 43022; /
 /* D01 - Nerina Mayakartifa. dr,Sp.PD, M.Sc, FINASIM */
 
 SELECT * FROM inap_vis WHERE visit LIKE '%konsul on%';
-SELECT * FROM inap_vis WHERE id_rwt = 45410;
+SELECT * FROM inap_vis WHERE id_rwt = 45401;
 SELECT * FROM inap_pasien WHERE kwit = ''; /*Ambil nomtri*/
-SELECT * FROM omset_visit_ranap WHERE nomtri = '211018-524';
+SELECT * FROM omset_visit_ranap WHERE nomtri = '211018-288';
 
 /*RI122 - Oksigen 2-5 Liter / Menit > 12 Jam ( 1 Hari )*/
 SELECT * FROM inap_jasa WHERE jasa1 LIKE '%oksigen%';
-SELECT * FROM inap_jasa WHERE id_rwt = 45407;
+SELECT * FROM inap_jasa WHERE id_rwt = 45401;
 SELECT * FROM inap_pasien WHERE kwit = ''; /*Ambil nomtri , masih ranap*/
-SELECT * FROM omset_jasa_ranap WHERE nomtri = '210928-520';
+SELECT * FROM omset_jasa_ranap WHERE nomtri = '211020-090';
 
 /* RI136 - Resusitasi Jantung & Paru (RJP) */
 /* RI071 - EKG 12 CHANNEL */
