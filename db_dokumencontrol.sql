@@ -43,6 +43,7 @@
 /* V15 - Mega Senja dr. ,Sp.P*/
 /* D95 - Randika Hermanda, dr */
 /* D09 - Apriani Rahmadhaniati, dr */ 
+/* A06 - Muhammad Musafaro Mauludi, .dr *^
 
 /*---------- KONTROL RAWAT JALAN ------------------------------*/
 SELECT * FROM kunj WHERE no_kwit = 210928243;
@@ -51,14 +52,14 @@ SELECT * FROM dep_poli WHERE nomtri = '210630-634';
 SELECT * FROM pasien WHERE pasien LIKE '%00131456 - SUKARSIH, Ny%';
 
 SELECT MAX(no_kwit) FROM kunj; 210920263
-SELECT * FROM kunj WHERE no_kwit = 211016136;
+SELECT * FROM kunj WHERE no_kwit = 211022007;
 SELECT * FROM kunj WHERE id = '';
 SELECT * FROM antrian WHERE notes = 'bayar' AND poli LIKE '%online%'; /*Search List Pasien Poli*/
 SELECT * FROM antrian WHERE notes = 'bayar' AND poli LIKE '%ugd%'; /*Search List Pasien Ugd*/
 SELECT * FROM antrian WHERE pasien LIKE '%00133124%'; /* Nomor Rekamedik */
-SELECT * FROM antrian WHERE nomtri = '211019-414'; /*Nomtri*/
+SELECT * FROM antrian WHERE nomtri = '211020-078'; /*Nomtri*/
 SELECT * FROM periksa WHERE pasien LIKE '%00027206%';
-SELECT * FROM periksa WHERE nomtri = '211019-456';  ----- MEDICAL CHECKUP --- 
+SELECT * FROM periksa WHERE nomtri = '211022-162';  ----- MEDICAL CHECKUP --- 
 SELECT * FROM periksa WHERE pasien LIKE '%00131203%';
 SELECT * FROM periksa2 WHERE nomtri = '210825-166';
 SELECT * FROM periksa3 WHERE nomtri = '210901-110';
@@ -212,7 +213,7 @@ SELECT * FROM ugd_alkes WHERE nomtri = '210930-232';
 
 /*-----------REFERENSI INPUTAN------------------*/
 /* UG003 - Dokter Spesialis (Konsul On Call) */
-SELECT * FROM ugd_vis WHERE nomtri = '211018-078';
+SELECT * FROM ugd_vis WHERE nomtri = '211022-003';
 SELECT * FROM omset_igd_visit WHERE nomtri = '211018-192';
 
 SELECT * FROM ugd_tind WHERE tind1 LIKE '%oks%';
@@ -321,15 +322,15 @@ SELECT * FROM omset_visit_ranap WHERE nomtri = '211018-288';
 
 /*RI122 - Oksigen 2-5 Liter / Menit > 12 Jam ( 1 Hari )*/
 SELECT * FROM inap_jasa WHERE jasa1 LIKE '%oksigen%';
-SELECT * FROM inap_jasa WHERE id_rwt = 45401;
+SELECT * FROM inap_jasa WHERE id_rwt = 45458;
 SELECT * FROM inap_pasien WHERE kwit = ''; /*Ambil nomtri , masih ranap*/
 SELECT * FROM omset_jasa_ranap WHERE nomtri = '211020-090';
 
 /* RI136 - Resusitasi Jantung & Paru (RJP) */
 /* RI071 - EKG 12 CHANNEL */
-SELECT * FROM inap_tind WHERE id_rwt = 45408;
+SELECT * FROM inap_tind WHERE id_rwt = 45478;
 SELECT * FROM inap_pasien WHERE kwit = ''; /*Ambil nomtri , masih ranap*/
-SELECT * FROM omset_tindakan_ranap WHERE nomtri = '211018-092';
+SELECT * FROM omset_tindakan_ranap WHERE nomtri = '211021-047';
 
 SELECT * FROM inap_lab WHERE id_rwt = 45033;  44721
 SELECT * FROM antrian WHERE pasien LIKE '%00130061%' AND notes = 'rawat';
@@ -373,17 +374,17 @@ SELECT * FROM kamar WHERE kamar LIKE '%Isolasi Topaz%';
 /* D95 - Randika Hermanda, dr */
 /* D09 - Apriani Rahmadhaniati, dr */ 
 
-SELECT * FROM antrian WHERE pasien LIKE '%00038227%'; 210816-001
+SELECT * FROM antrian WHERE pasien LIKE '%00136742%'; 210816-001
 SELECT * FROM inap WHERE id_pas = 38493; 
-SELECT * FROM inap_pasien WHERE pasien LIKE '%00038227%';
+SELECT * FROM inap_pasien WHERE pasien LIKE '%00136742%';
 SELECT * FROM inap_lab WHERE id_rwt = 43932;
-SELECT * FROM inap_resep WHERE pasien LIKE '%00038227%';
-SELECT * FROM bebas_depo WHERE pasien LIKE '%00038227%';
-SELECT * FROM kunj_inap WHERE pasien LIKE '%00038227%';
+SELECT * FROM inap_resep WHERE pasien LIKE '%00136742%';
+SELECT * FROM bebas_depo WHERE pasien LIKE '%00136742%';
+SELECT * FROM kunj_inap WHERE pasien LIKE '%00136742%';
 SELECT * FROM ugd_lab WHERE nomtri = '210816-001';
-SELECT * FROM ugd_resep WHERE pasien LIKE '%00038227%';
-SELECT * FROM ugd_r WHERE pasien LIKE '%00038227%';
-SELECT * FROM kunj WHERE pasien LIKE '%00038227%';
+SELECT * FROM ugd_resep WHERE pasien LIKE '%00136742%';
+SELECT * FROM ugd_r WHERE pasien LIKE '%00136742%';
+SELECT * FROM kunj WHERE pasien LIKE '%00136742%';
 
 /*Update DPJP pasien ranap*/
 /* V36 - Win dr. Sp.OG */
