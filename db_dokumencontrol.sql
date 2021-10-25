@@ -59,7 +59,7 @@ SELECT * FROM antrian WHERE notes = 'bayar' AND poli LIKE '%ugd%'; /*Search List
 SELECT * FROM antrian WHERE pasien LIKE '%00133124%'; /* Nomor Rekamedik */
 SELECT * FROM antrian WHERE nomtri = '211020-078'; /*Nomtri*/
 SELECT * FROM periksa WHERE pasien LIKE '%00027206%';
-SELECT * FROM periksa WHERE nomtri = '211022-162';  ----- MEDICAL CHECKUP --- 
+SELECT * FROM periksa WHERE nomtri = '211023-209';  ----- MEDICAL CHECKUP --- 
 SELECT * FROM periksa WHERE pasien LIKE '%00131203%';
 SELECT * FROM periksa2 WHERE nomtri = '210825-166';
 SELECT * FROM periksa3 WHERE nomtri = '210901-110';
@@ -73,7 +73,7 @@ SELECT * FROM kunj WHERE tgl = '2021-06-17' AND login LIKE '%%';
 SELECT * FROM resep_luar WHERE no_kwit = '210705040';
 
 SELECT * FROM kunj WHERE id =  '210814-361';
-SELECT * FROM kunj WHERE no_kwit = 211016132;
+SELECT * FROM kunj WHERE no_kwit = 211023219;
 
 /*----------- REFERENSI LABORATORIUM ----------- */
 /* LB0050 - Trigliserida*/
@@ -316,13 +316,13 @@ SELECT * FROM inap_alkes WHERE tgl = '2021-06-24 17:00:00' AND id_rwt = 43022; /
 /* D01 - Nerina Mayakartifa. dr,Sp.PD, M.Sc, FINASIM */
 
 SELECT * FROM inap_vis WHERE visit LIKE '%konsul on%';
-SELECT * FROM inap_vis WHERE id_rwt = 45401;
+SELECT * FROM inap_vis WHERE id_rwt = 45466;
 SELECT * FROM inap_pasien WHERE kwit = ''; /*Ambil nomtri*/
 SELECT * FROM omset_visit_ranap WHERE nomtri = '211018-288';
 
 /*RI122 - Oksigen 2-5 Liter / Menit > 12 Jam ( 1 Hari )*/
 SELECT * FROM inap_jasa WHERE jasa1 LIKE '%oksigen%';
-SELECT * FROM inap_jasa WHERE id_rwt = 45458;
+SELECT * FROM inap_jasa WHERE id_rwt = 45480;
 SELECT * FROM inap_pasien WHERE kwit = ''; /*Ambil nomtri , masih ranap*/
 SELECT * FROM omset_jasa_ranap WHERE nomtri = '211020-090';
 
